@@ -39,5 +39,13 @@ resultadoMinimo.textContent = "El numero minimo es: " + minimo;
 numerosAleatorios.shift();
 numerosAleatorios.pop();
 
-var nuevoArray = document.getElementById("nuevo");
+var nuevoArray = document.getElementById("arrayModificada");
 nuevoArray.textContent = "si le borramos el primer y el ultimo elemento al array se veria de esta manera: " + numerosAleatorios;
+
+// Agregar un nuevo número aleatorio al final del array
+var nuevoNumeroAleatorio = Math.floor(Math.random() * 100) + 1;
+numerosAleatorios.push(nuevoNumeroAleatorio);
+
+// Mostrar el array actualizado en el HTML
+var arrayNuevoElemento = document.getElementById("arrayNuevoElemento");
+arrayNuevoElemento.textContent = "Y así se vería si ahora le agregamos al final un nuevo elemento aleatorio: " + numerosAleatorios;
