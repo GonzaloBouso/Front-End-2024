@@ -20,4 +20,17 @@ var suma = numerosAleatorios.reduce((total, actual) => total + actual, 0);
 var resultadosuma = document.getElementById("resultado");
 resultadosuma.textContent = "El resultado de la suma es: " + suma;
 
-console.log(suma);
+// Promedio
+var promedio = suma / numerosAleatorios.length;
+var resultadopromedio = document.getElementById("promedio");
+resultadopromedio.textContent = "El promedio es: " + promedio;
+
+// Número máximo
+var maximo = Math.max(...numerosAleatorios);
+var resultadoMaximo = document.getElementById("maximo");
+resultadoMaximo.textContent = "El número máximo es: " + maximo;
+
+// Numero minimo
+var minimo = Math.min(...numerosAleatorios);
+var resultadoMinimo = document.getElementById("minimo");
+resultadoMinimo.textContent = "El numero minimo es: " + minimo;
