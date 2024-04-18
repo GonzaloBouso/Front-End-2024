@@ -49,3 +49,22 @@ numerosAleatorios.push(nuevoNumeroAleatorio);
 // Mostrar el array actualizado en el HTML
 var arrayNuevoElemento = document.getElementById("arrayNuevoElemento");
 arrayNuevoElemento.textContent = "Y así se vería si ahora le agregamos al final un nuevo elemento aleatorio: " + numerosAleatorios;
+
+// Ordenar el arreglo numéricamente
+numerosAleatorios.sort(function(a, b) {
+    return a - b;
+  });
+  
+  // Mostrar el arreglo ordenado en el HTML
+  var arrayOrdenado = document.getElementById("arrayOrdenado");
+  arrayOrdenado.textContent = "El array ordenado es: " + numerosAleatorios;
+  
+ // invertir el orden del arreglo. Uso el mismo metodo "sort" pero lo ordenare al reves, en este caso (b-a)
+ 
+ numerosAleatorios.sort(function(b, a){
+    return a - b;
+ }) 
+
+ var arrayInvertido = document.getElementById("arrayInvertido");
+ arrayInvertido.textContent = "El array con su orden invertido es: " + numerosAleatorios;
+ 
