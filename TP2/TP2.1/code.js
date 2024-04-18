@@ -34,3 +34,10 @@ resultadoMaximo.textContent = "El número máximo es: " + maximo;
 var minimo = Math.min(...numerosAleatorios);
 var resultadoMinimo = document.getElementById("minimo");
 resultadoMinimo.textContent = "El numero minimo es: " + minimo;
+
+// Array con el primer y el ultimo elemento borrado
+numerosAleatorios.shift();
+numerosAleatorios.pop();
+
+var nuevoArray = document.getElementById("nuevo");
+nuevoArray.textContent = "si le borramos el primer y el ultimo elemento al array se veria de esta manera: " + numerosAleatorios;
