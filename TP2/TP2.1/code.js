@@ -67,4 +67,11 @@ numerosAleatorios.sort(function(a, b) {
 
  var arrayInvertido = document.getElementById("arrayInvertido");
  arrayInvertido.textContent = "El array con su orden invertido es: " + numerosAleatorios;
- 
+
+ // Mostrar la posicion de cada elemento del arreglo
+
+ for (var i = 0; i < numerosAleatorios.length; i++){
+    var elemento =document.createElement("p");
+    elemento.textContent = "Elemento en la posicion " + i + "; " + numerosAleatorios[i];
+    posicion.appendChild(elemento);
+ }
