@@ -1,3 +1,4 @@
+
 // Paso 1: Define un array vacío
 var numerosAleatorios = [];
 
@@ -11,18 +12,12 @@ for (var i = 0; i < 10; i++) {
 console.log(numerosAleatorios);
 
 // Mostrar numeros en el HTML
-
-
 var contenedor = document.getElementById('contenedor');
+contenedor.textContent = "Los numeros son: " + numerosAleatorios;
 
-// Paso 2: Array 
-numerosAleatorios = [];
+// Suma
+var suma = numerosAleatorios.reduce((total, actual) => total + actual, 0);
+var resultadosuma = document.getElementById("resultado");
+resultadosuma.textContent = "El resultado de la suma es: " + suma;
 
-// Paso 3 y 4: Recorrer el array y agregar los elementos al DOM
-numerosAleatorios.forEach(elemento => {
-    const nuevoElemento = document.createElement('p'); // Crear un nuevo párrafo para cada elemento
-    nuevoElemento.textContent = elemento; // Establecer el texto del párrafo como el elemento del array
-    contenedor.appendChild(nuevoElemento); // Agregar el párrafo como hijo del contenedor en el HTML
-});
-
-//hola
+console.log(suma);
