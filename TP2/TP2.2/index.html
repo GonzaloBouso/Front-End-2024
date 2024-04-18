@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>formulario de estudiante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="alumnoForm">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="ingrese un nombre" required><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido"  placeholder="ingrese el apellido"><br>
+
+        <label for="legajo">Legajo:</label><br>
+        <input type="text" id="legajo" name="legajo" placeholder="ingrese el legajo" required><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email"  placeholder="ingrese el gmail" required><br>
+
+        <h3>Materias</h3>
+        <label for="materia1">Materia 1:</label><br>
+        <input type="text" id="materia1" name="materia1" placeholder="ingrese materia"><br>
+        <label for="nota1">Nota:</label><br>
+        <input type="number" id="nota1" name="nota1" min="0" max="10" required><br>
+
+        <label for="materia2">Materia 2:</label><br>
+        <input type="text" id="materia2" name="materia2" placeholder="ingrese materia"><br>
+        <label for="nota2">Nota:</label><br>
+        <input type="number" id="nota2" name="nota2" min="0" max="10 required"><br>
+
+        <label for="materia3">Materia 3:</label><br>
+        <input type="text" id="materia3" name="materia3" placeholder="ingrese materia" required><br>
+        <label for="nota3">Nota:</label><br>
+        <input type="number" id="nota3" name="nota3" min="0" max="10" required><br>
+
+        <label for="materia4">Materia 4:</label><br>
+        <input type="text" id="materia4" name="materia4" placeholder="ingrese materia" required><br>
+        <label for="nota4">Nota:</label><br>
+        <input type="number" id="nota4" name="nota4" min="0" max="10" required><br>
+
+        <label for="materia5">Materia 5:</label><br>
+        <input type="text" id="materia5" name="materia5" placeholder="ingrese materia" required><br>
+        <label for="nota5">Nota:</label><br>
+        <input type="number" id="nota5" name="nota5" min="0" max="10" required><br>
+
+        <button type="submit">Calcular Promedio</button>
+    </form>
+
+    <div id="result">
+        Promedio: <span id="promedio"></span>
+    </div>
+
+    <script>
+        document.getElementById('alumnoForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var materias = [
+                { materia: document.getElementById('materia1').value, nota: parseFloat(document.getElementById('nota1').value) },
+                { materia: document.getElementById('materia2').value, nota: parseFloat(document.getElementById('nota2').value) },
+                { materia: document.getElementById('materia3').value, nota: parseFloat(document.getElementById('nota3').value) },
+                { materia: document.getElementById('materia4').value, nota: parseFloat(document.getElementById('nota4').value) },
+                { materia: document.getElementById('materia5').value, nota: parseFloat(document.getElementById('nota5').value) }
+            ];
+
+            var promedio = materias.reduce((acc, curr) => acc + curr.nota, 0) / materias.length;
+
+            document.getElementById('promedio').innerText = promedio;
+        });
+    </script>
+</body>
+</html>

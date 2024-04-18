@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+}
+
+
+/* Header y navbar */
+.header {
+    background-color: #427bfe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 50px;
+    width: auto;
+    transition:all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #aceff1;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: #1b3039;
+}
+
+.header .btn button {
+    font-weight: 700; 
+    color: #1b3039;
+    padding: 9px 20px;
+    background-color: #aceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: #e2f1f8;
+    color: #427bfe;
+    transform: scale(1.1);
+}
+/* Seccion 1 SOBRE MI */
+.sobreMi {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #427bfe 0%, #1b3039 100%);}
+
+.titulo1 {
+    background-color: #427bfe;
+}
+
+ h1 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+
+.sobreMi .imgBouso img {
+    height: 200px;
+    margin-left: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.texto-sobreMi {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 30px;
+    color: #ffffff;
+}
+
+.maps {
+    flex: 1;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.sobreMi .maps iframe {
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s;
+}
+
+.sobreMi .maps iframe:hover {
+    transform: scale(1.1);
+}
+
+/* Seccion 2 ¿Que estudio? */
+
+#estudiosId {
+    background-image: linear-gradient(to bottom, #1b3039 0%, #427bfe 100%);}
+
+h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 35%;
+    margin-bottom: 20px;
+    
+}
+
+.estudios {
+    display: flex;
+    align-items: center;
+}
+
+.texto-estudios {
+    flex: 1;
+    margin-left: 20px; 
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+.imagenUNSTA img {
+    width: 400px;
+    margin: 30px 20px 30px 25px;
+    border-radius: 60px;
+    transition: all 0.3s;
+}
+
+.imagenUNSTA:hover img {
+    transform: scale(1.1);
+}
+
+/* Seccion 3 Materias */
+
+#materiasId {
+    background-image: linear-gradient(to bottom, #427bfe 0%, #1b3039 100%); /* Degradado de azul a un tono más oscuro de azul */
+    padding: 20px;
+}
+
+#materiasId h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 45%;
+}
+
+#materiasId table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+#materiasId th, #materiasId td {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #427bfe;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #1b3039; /* Agregar bordes blancos */
+}
+
+#materiasId th {
+    background-color: #3a5eb9;
+    color: #fff;
+}
+
+#materiasId td:first-child {
+    font-weight: bold;
+    color: #fff;
+}
+
+#materiasId td:nth-child(n+3) {
+    font-style: italic;
+}
+
+#materiasId tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#materiasId tr:hover td {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Seccion 4 compañeros */
+
+#tarjetasId {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #1b3039 0%, #427bfe 100%); /* Degradado de azul a un tono más oscuro de azul */
+}
+
+.tarjetas-container {
+    display: flex;
+}
+
+.contenedor-titulo {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.tarjeta {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0 10px;
+    transition: all 0.3s ease;
+
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(255, 255, 255, 1); 
+}
+
+.tarjeta img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+.contenido h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contenido p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+}
+
+.redes-sociales a img {
+    width: 30px;
+}
+
+
+/* seccion 5 */
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.razones {
+    background-image: linear-gradient(to bottom, #427bfe 0%, #dde2e4 100%); /* Degradado de azul a un tono más oscuro de azul */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.razon {
+    margin-bottom: 30px;
+    border-bottom: #333 solid 5px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info h3,
+.social-links h3 {
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links ul li:last-child {
+    margin-right: 0;
+}
+
+.social-links ul li a {
+    color: #fff;
+    font-size: 20px;
+}
