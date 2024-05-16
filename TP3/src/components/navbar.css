@@ -19,7 +19,7 @@
   }
   
   .navbar ul li {
-    margin-bottom: 15px; /* Espacio entre elementos */
+    margin-bottom: 30px; /* Espacio entre elementos */
   }
   
   .navbar ul li a {
@@ -42,7 +42,7 @@
 }
   
   .navbar ul li a:hover {
-    color: #ff6600; /* Color del texto al pasar el mouse */
+    color: #a4a4a4; /* Color del texto al pasar el mouse */
     background-color: #444; /* Color de fondo al pasar el mouse */
     border-radius: 5px; /* Bordes redondeados */
   }
