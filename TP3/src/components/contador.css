@@ -1,43 +1,43 @@
 .contador-container {
-    text-align: center; /* Alinea el contenido al centro */
+    text-align: center; 
     width: 400px;
-  height: 500px;
-  padding-top: 100px;
-  margin: 20px auto; /* Margen para centrar horizontalmente */
-  /* Otros estilos */
-    color: #fff; /* Color del texto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    height: 500px;
+    padding-top: 100px;
+    margin: 20px auto; 
+ 
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
 
 
 
   }
   
   .contador-title {
-    font-size: 38px; /* Tamaño de fuente del título */
-    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 38px; 
+    margin-bottom: 20px;
   }
   
   .contador-value {
-    font-size: 48px; /* Tamaño de fuente del valor del contador */
-    font-weight: bold; /* Texto en negrita */
-    color: #007bff; /* Color del texto */
-    margin-bottom: 20px; /* Espaciado inferior */
-    font-size: 48px; /* Tamaño de fuente grande */
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 48px; 
   }
   
   .contador-button {
-    padding: 10px 20px; /* Espaciado interno del botón */
-    font-size: 18px; /* Tamaño de fuente del botón */
-    background-color: #007bff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 20px; /* Bordes redondeados del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    padding: 10px 20px; 
+    font-size: 18px; 
+    background-color: #007bff;
+    color: #fff;
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer; 
   }
   
   .contador-button:hover {
-    background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
-    transform: scale(1.05); /* Escalar el botón al pasar el cursor */
-    transition: transform 0.2s ease-in-out; /* Transición suave */
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+    transition: transform 0.2s ease-in-out;
   }
   

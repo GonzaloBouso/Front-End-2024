@@ -1,32 +1,32 @@
 /* Estilos para el contenedor principal */
 .color-generator-container {
-    text-align: center; /* Alinea el contenido al centro */
+    text-align: center; 
     margin-right: 100px;
     margin-top: 100px;
-    padding: 20px; /* Agrega espacio interno */
+    padding: 20px; 
   }
   
   /* Estilos para el cuadrado */
   .color-square {
     width: 200px;
     height: 200px;
-    border-radius: 10px; /* Bordes redondeados */
-    margin: 20px auto; /* Centra horizontalmente */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border-radius: 10px; 
+    margin: 20px auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
   
   /* Estilos para el botón */
   .color-button {
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 18px; /* Tamaño de fuente */
-    background-color: #007bff; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    padding: 10px 20px; 
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
   }
   
   .color-button:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+    background-color: #0056b3;
   }
   

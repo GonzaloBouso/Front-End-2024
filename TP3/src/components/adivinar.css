@@ -1,0 +1,38 @@
+/* Estilos para el contenedor principal */
+.adivinar-container {
+    text-align: center; 
+    margin-top: 200px; 
+    margin-right: 150px;
+  }
+  
+  /* Estilos para los botones */
+  .adivinar-button {
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-top: 10px; 
+  }
+  
+  .adivinar-button:hover {
+    background-color: #0056b3; 
+  }
+  
+  /* Estilos para el input */
+  .adivinar-input {
+    padding: 8px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+  }
+  
+  /* Estilos para el mensaje */
+  .adivinar-message {
+    font-size: 18px; 
+    margin-top: 10px; 
+  }
+  

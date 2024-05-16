@@ -1,0 +1,56 @@
+/* Estilos para el contenedor principal */
+.emojis-container {
+    text-align: center; 
+    margin-right: 170px;
+    margin-top: 200px;
+
+  }
+  
+  /* Estilos para el emoji */
+  .emoji {
+    font-size: 72px; 
+    margin-bottom: 20px; 
+  }
+  
+  /* Estilos para el botón de generar emoji */
+  .emoji-button {
+    padding: 10px 20px; 
+    font-size: 18px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 20px; 
+  }
+  
+  .emoji-button:hover {
+    background-color: #0056b3; 
+  }
+  
+  /* Estilos para la sección de voto */
+  .voto-section {
+    margin-top: 20px; 
+  }
+  
+  /* Estilos para los botones de voto */
+  .voto-buttons {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 10px; 
+  }
+  
+  .voto-button {
+    padding: 10px 20px; 
+    font-size: 18px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    margin: 0 10px; 
+  }
+  
+  .voto-button-selected {
+    background-color: #c2c6c9; 
+  }

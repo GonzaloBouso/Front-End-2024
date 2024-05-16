@@ -9,6 +9,7 @@ import { Adivinar } from './components/Adivinar';
 
 function App() {
   return (
+    <>
     <Router>
       <Navbar />
       <Routes>
@@ -19,7 +20,8 @@ function App() {
         <Route path="/adivinar" element={<Adivinar />} />
       </Routes>
     </Router>
-   
+
+    </>
   );
 }
 
