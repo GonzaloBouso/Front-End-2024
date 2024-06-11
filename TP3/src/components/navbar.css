@@ -1,49 +1,46 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    background-color: #222; /* Color de fondo */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-top: 60px; /* Espacio para evitar que el contenido se superponga al navbar */
-    
-
-  }
-  
-  .navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navbar ul li {
-    margin-bottom: 30px; /* Espacio entre elementos */
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: #fff; /* Color del texto */
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    transition: all 0.3s ease; /* Transición suave para los efectos */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    letter-spacing: 1px; /* Espaciado entre letras */
-    border-bottom: 2px solid transparent; /* Borde inferior transparente */
-    transition: border-color 0.3s ease; /* Transición suave para el color del borde */
-
-  }
-  
-  .navbar ul li a:hover,
-.navbar ul li a.active {
-  border-color: #ff6600; /* Color del borde al pasar el mouse o activo */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 80px; 
+  padding-left: 20px; 
 }
-  
-  .navbar ul li a:hover {
-    color: #a4a4a4; /* Color del texto al pasar el mouse */
-    background-color: #444; /* Color de fondo al pasar el mouse */
-    border-radius: 5px; /* Bordes redondeados */
-  }
-  
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin-bottom: 25px; 
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #131313; 
+  font-size: 16px;
+  font-weight: normal;
+  padding: 12px 24px;
+  transition: all 0.2s ease; 
+  text-transform: capitalize; 
+  letter-spacing: 0.5px; 
+  border-left: 3px solid transparent; 
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  border-left-color: #000000; 
+}
+
+.navbar ul li a:hover {
+  color: #0b0b0b; 
+  background-color: #972222; 
+  border-radius: 3px; 
+}

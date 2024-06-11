@@ -8,7 +8,7 @@ export const Adivinar = () => {
   const [mensaje, setMensaje] = useState('');
 
   const generarNumeroAleatorio = () => {
-    const numero = Math.floor(Math.random() * 100) + 1; // Genera un número aleatorio entre 1 y 100
+    const numero = Math.floor(Math.random() * 100) + 1; 
     setNumeroAleatorio(numero);
     setMensaje('');
   };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar } from "./components/Navbar"
+import { Navbar } from './components/Navbar'
 import { Presentacion } from './components/Presentacion';
 import { Contador } from './components/Contador';
 import { Colores } from './components/Colores';
@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/presentacion" element={<Presentacion nombre="Gonzalo" edad="22" />} />
+        <Route path="/presentacion" element={<Presentacion nombre="Jose Maria" edad="20" imagenSrc="./public/Captura de pantalla 2024-05-25 190015.png" />} />
         <Route path="/contador" element={<Contador />} />
         <Route path="/colores" element={<Colores />} />
         <Route path="/emojis" element={<Emojis />} />

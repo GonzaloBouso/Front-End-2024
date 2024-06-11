@@ -1,56 +1,57 @@
-/* Estilos para el contenedor principal */
 .emojis-container {
-    text-align: center; 
-    margin-right: 170px;
-    margin-top: 200px;
+  text-align: center;
+  margin-top: 50px;
+}
 
-  }
-  
-  /* Estilos para el emoji */
-  .emoji {
-    font-size: 72px; 
-    margin-bottom: 20px; 
-  }
-  
-  /* Estilos para el botón de generar emoji */
-  .emoji-button {
-    padding: 10px 20px; 
-    font-size: 18px; 
-    background-color: #007bff; 
-    color: #fff; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    margin-top: 20px; 
-  }
-  
-  .emoji-button:hover {
-    background-color: #0056b3; 
-  }
-  
-  /* Estilos para la sección de voto */
-  .voto-section {
-    margin-top: 20px; 
-  }
-  
-  /* Estilos para los botones de voto */
-  .voto-buttons {
-    display: flex; 
-    justify-content: center; 
-    margin-top: 10px; 
-  }
-  
-  .voto-button {
-    padding: 10px 20px; 
-    font-size: 18px; 
-    background-color: #007bff; 
-    color: #fff; 
-    border: none;
-    border-radius: 5px;
-    cursor: pointer; 
-    margin: 0 10px; 
-  }
-  
-  .voto-button-selected {
-    background-color: #c2c6c9; 
-  }
+.emoji {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.emoji-button {
+  background-color: #ff9800;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.emoji-button:hover {
+  background-color: #f57c00;
+}
+
+.voto-section {
+  margin-top: 40px;
+}
+
+.voto-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.voto-button {
+  background-color: #e91e63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.voto-button:hover {
+  background-color: #c2185b;
+}
+
+.voto-button-selected {
+  background-color: #2196f3 !important;
+}
